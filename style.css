@@ -248,7 +248,6 @@ header {
     position: fixed;
     z-index: 1;
     background: linear-gradient(145deg, #ffffff, #e6e6e6);
-
     padding: 10px;
 
 }
@@ -426,7 +425,7 @@ header {
     }
 
     .main {
-        margin-top: 190px;
+        margin-top: 202px;
     }
 
     .title {
