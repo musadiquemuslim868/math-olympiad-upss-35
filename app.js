@@ -1,4 +1,6 @@
-
+let tableArray = document.getElementById('table-aray');
+let objective = document.getElementById('objective');
+tableArray.style.display = 'none';
 function myFunction() {
   let num = document.getElementById('a');
   let print = document.getElementById('print');
@@ -25,15 +27,19 @@ function myFunction() {
 
           for (let i = 1; i <= y; i++) {
             print.innerHTML += `${x} x ${i} = ${x * i}<br/>`;
+            tableArray.style.display = 'flex';
+            objective.style.display = 'none';
           }
         }
       });
     }
   });
 }
-function reset(){
+function reset() {
   let print = document.getElementById('print');
-   let num = document.getElementById('a');
-    num.innerHTML = "";
+  let num = document.getElementById('a');
+  num.innerHTML = "";
   print.innerHTML = "";
+  tableArray.style.display = 'none';
+  objective.style.display = 'flex';
 }
