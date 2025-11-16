@@ -1,0 +1,457 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: philosopher, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    background-color: #f8f9fa;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo {
+    width: 19%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes rotateLogoHorizontal {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    40% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+.logo>img {
+    width: 75px;
+    animation: rotateLogoHorizontal 5s linear infinite;
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+
+.title {
+    /* width: 80%; */
+
+    align-items: center;
+
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    font-family: philosopher, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    /* display: none; */
+}
+
+.title-1 {
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    ;
+    font-family: philosopher, sans-serif;
+    font-size: 3rem;
+    font-weight: bolder;
+    display: none;
+}
+
+.span {
+    font-family: philosopher, sans-serif;
+    color: #0682b3;
+}
+
+.campus {
+    width: 19%;
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+
+    animation: slideFromRight 1s ease-in-out;
+    /* background-color: brown; */
+}
+
+.campus>span {
+    padding: 10px;
+    background-color: white;
+    border: 4px solid;
+    border-image: linear-gradient(90deg, #0682b3, red) 1;
+    border-radius: 12px;
+    color: #0682b3;
+    border-radius: 5px;
+    font-weight: 700;
+    font-family: philosopher, sans-serif;
+    animation: rotateLogoHorizontal 5s linear infinite;
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+
+.red {
+    font-family: philosopher, sans-serif;
+    color: red;
+    ;
+}
+
+
+@keyframes slideFromRight {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    40% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@media screen and (max-width:900px) {
+    .title {
+        font-size: 1.5rem
+    }
+
+    .campus {
+        font-size: 0.8rem;
+    }
+}
+
+.hero {
+    width: 100%;
+    margin-top: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 85px;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: linear-gradient(45deg, #ff0000, #8b0000);
+
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.head-year {
+    font-size: 1rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button>button {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    /* border-radius: 1px solid gray; */
+    background: linear-gradient(45deg, #ffd900, #ffb300, #ff8800);
+    text-transform: capitalize;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+
+}
+
+.button>button:active {
+
+    background: linear-gradient(45deg, #ff9900, #ffcc00, #fff700);
+    transform: scale(0.97);
+    color: #fff;
+
+}
+
+.button>.reset {
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom-left-radius: 40px;
+    border-top-right-radius: 40px;
+    /* border-radius: 1px solid gray; */
+    background: linear-gradient(45deg, #ff0000, #ff4d4d, #cc0000);
+    color: #fff;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.button>.reset:active {
+    background: linear-gradient(45deg, #ff6666, #ff1a1a, #e60000);
+
+}
+
+.hero-1 {
+    width: 100%;
+    margin-top: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+
+    padding: 10px;
+
+}
+
+.hero-2 {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  
+
+}
+
+.obj {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: red;
+      padding: 20px 40px;
+}
+.obj>span{
+    padding: 10px 60px;
+    border-image: linear-gradient(90deg, #0682b3, red) 1;
+     border: 4px solid;
+    border-image: linear-gradient(90deg, #0682b3, red) 1;
+    border-radius: 12px;
+}
+.object-text {
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #066eb3, #00c6ff);
+}
+
+.main {
+    width: 100%;
+    margin-top: 185px;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 40px;
+    background: linear-gradient(135deg, #066eb3, #00c6ff);
+
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
+}
+
+.bio-data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bio-data-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.bio-data-img>img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 1s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+
+}
+
+.bio-data-img>img:hover {
+    transform: scale(1.2);
+    /* Zoom effect */
+}
+
+.bio-data-context {
+    width: 100%;
+
+    text-align: center;
+}
+
+.data {
+    text-transform: capitalize;
+    color: white;
+
+}
+
+.table {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 40px;
+    background: whitesmoke;
+
+
+
+}
+
+.table-head {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: #0682b3;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.table-print {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.table-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #e6f4ff, #d0e8ff, #b3daff);
+    padding: 20px;
+    color: #084b83;
+    /* border: 1px solid #0682b3; */
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+@media screen and (max-width:1140px) {
+    .title {
+        font-size: 2.3rem;
+    }
+}
+
+@media screen and (max-width:670px) {
+
+    header,
+    .button {
+        padding: 10px;
+    }
+
+    .hero {
+        margin-top: 80px;
+    }
+
+    .hero-1 {
+        margin-top: 118px;
+
+    }
+
+    .main {
+        margin-top: 190px;
+    }
+
+    .title {
+        display: none;
+    }
+
+    .title-1 {
+        display: block;
+    }
+
+    .logo>img {
+        width: 60px;
+    }
+
+    .campus>span {
+        padding: 6px;
+        font-size: 0.6rem;
+
+    }
+
+    .hero>.head,
+    .table-head {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media screen and (max-width:550px) {
+    .head-year {
+        font-size: 0.8rem;
+    }
+
+    .button>.button {
+        width: 150px;
+    }
+
+}
